@@ -1,7 +1,6 @@
 import pytest
 import pandas as pd
 import numpy as np
-from funcy import none_fn
 from scipy.constants import precision
 from sklearn.metrics import fbeta_score
 from ml.data import process_data
@@ -39,6 +38,7 @@ def test_process_data_shapes():
     )
 
     assert X.shape[0] == y.shape[0]
+
     assert len(X.shape) == 2
 
 
